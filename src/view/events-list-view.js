@@ -1,23 +1,20 @@
-import { createElement } from "../render";
-
-function createEventsListTemplate() {
-    return '<ul class="trip-events__list"></ul>';
-}
+import { createElement } from '../render.js';
+import { createEventsListTemplate } from '../template/events-list-template.js';
 
 export default class EventsListView {
-    getTemplate() {
-        return createEventsListTemplate();
+  getTemplate() {
+    return createEventsListTemplate();
+  }
+
+  getElement() {
+    if (!this.element) {
+      this.element = createElement(this.getTemplate());
     }
 
-    getElement() {
-        if (!this.element) {
-            this.element = createElement(this.getTemplate());
-        }
+    return this.element;
+  }
 
-        return this.element;
-    }
-
-    removeElement() {
-        this.element = null;
-    }
+  removeElement() {
+    this.element = null;
+  }
 }
