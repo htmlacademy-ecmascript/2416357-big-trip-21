@@ -5,7 +5,7 @@ import { render } from './render.js';
 
 const filterContainerElement = document.querySelector('.trip-controls__filters');
 const eventsSectionElement = document.querySelector('.trip-events');
-const eventsListPresenter = new EventsListPresenter(eventsSectionElement);
+const eventsListPresenter = new EventsListPresenter({eventsSectionElement});
 
 render(new FilterView(), filterContainerElement);
 render(new SortingView(), eventsSectionElement);
