@@ -1,6 +1,7 @@
 import { createElement } from '../render';
 import { createSortingTemplate } from '../template/sorting-template.js';
 
+
 export default class SortingView {
   getTemplate() {
     return createSortingTemplate();

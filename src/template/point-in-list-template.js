@@ -1,4 +1,4 @@
-function createEventTemplate() {
+function createPointTemplate() {
   return `
     <li class="trip-events__item">
         <div class="event">
@@ -40,4 +40,4 @@ function createEventTemplate() {
   `;
 }
 
-export {createEventTemplate};
+export {createPointTemplate};

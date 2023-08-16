@@ -1,10 +1,10 @@
-import { createElement } from '../render.js';
-import { createEventEditTemplate } from '../template/event-edit-template.js';
+import { createElement } from '../render';
+import { createPointTemplate } from '../template/point-in-list-template.js';
 
 
-export default class EventEditView {
+export default class PointView {
   getTemplate() {
-    return createEventEditTemplate();
+    return createPointTemplate();
   }
 
   getElement() {

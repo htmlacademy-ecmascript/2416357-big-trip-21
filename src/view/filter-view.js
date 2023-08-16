@@ -1,6 +1,7 @@
 import { createElement } from '../render.js';
 import { createFilterTemplate } from '../template/filter-template.js';
 
+
 export default class FilterView {
   getTemplate() {
     return createFilterTemplate();
