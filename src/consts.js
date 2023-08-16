@@ -1,3 +1,3 @@
-const EVENT_COUNT = 3;
+const POINT_COUNT = 3;
 
-export {EVENT_COUNT};
+export {POINT_COUNT};

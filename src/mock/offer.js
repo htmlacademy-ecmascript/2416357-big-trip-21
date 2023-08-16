@@ -1,6 +1,4 @@
-import { getRandomArrayElement } from '../utils.js';
-
-const mockIffers = [
+const mockOffers = [
   {
     "type": "taxi",
     "offers": [
@@ -206,3 +204,9 @@ const mockIffers = [
       ]
   }
 ]
+
+function getOffers() {
+  return mockOffers;
+}
+
+export {getOffers};

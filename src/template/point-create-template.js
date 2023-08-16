@@ -1,4 +1,4 @@
-function createEventCreateTemplate() {
+function createPointCreateTemplate() {
   return `
     <li class="trip-events__item">
       <form class="event event--edit" action="#" method="post">
@@ -165,4 +165,4 @@ function createEventCreateTemplate() {
   `;
 }
 
-export {createEventCreateTemplate};
+export {createPointCreateTemplate};
